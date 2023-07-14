@@ -47,8 +47,13 @@ public class UserController {
 		return new ResponseEntity<>(userAdded, HttpStatus.CREATED);
 	}
 	
-	@GetMapping("/user/find/{age}")
+	/*@GetMapping("/user/find/{age}")
 	public String getOlderStudent(@PathVariable("age") int age) {
+		return userRepository.findOlderUser(age);
+	}*/
+	
+	@PostMapping("/user/find")
+	public String getOlderStudent(@RequestBody int age) {
 		return userRepository.findOlderUser(age);
 	}
 	
