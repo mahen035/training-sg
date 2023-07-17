@@ -2,14 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 import {Header} from './components/Header';
 import { TodoContainer } from './components/TodoContainer';
+import FetchData from './components/api/FetchData';
 
-import Index from './components/login/Index';
 
 function App() {
   return (
     <div className="App">
       <h1>Welcome to my React App!</h1>
-      <Index />
+      <FetchData/>
     </div>
   );
 }

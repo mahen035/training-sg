@@ -1,9 +1,10 @@
 import React from 'react';
 
 function Success(props) {
+    var user = localStorage.getItem('user')
     return (
         <div>
-            <h1>Login Successful!!</h1>
+            <h1>Welcome, {user} Login Successful!!</h1>
         </div>
     );
 }

@@ -8,6 +8,7 @@ function LoginPage(props) {
     let navigate = useNavigate();
     const signIn = ()=>{
         if(user.userName == 'test' && user.password == '123'){
+                localStorage.setItem('user', user.userName)
                 navigate('/success')
         }
         else{
