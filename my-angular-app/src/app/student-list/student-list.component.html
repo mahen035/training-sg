@@ -1,0 +1,23 @@
+<app-student-count></app-student-count>
+<br/><br/>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>GENDER</th>
+            <th>DOB</th>
+            <th>COURSE FEE</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of students">
+            <td>{{student.ID}}</td>
+            <td>{{student.FirstName +" "+student.LastName}}</td>
+            <td>{{student.Gender}}</td>
+            <td>{{student.DOB}}</td>
+            <td>{{student.CourseFee}}</td>
+
+        </tr>
+    </tbody>
+</table>

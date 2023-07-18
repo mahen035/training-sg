@@ -1,0 +1,12 @@
+table{
+    color:blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+td, th{
+    border:1px solid black;
+    padding:5px
+}

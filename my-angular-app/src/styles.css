@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+.boldClass{
+    font-weight: bold;
+}
+.italicClass{
+    font-style: italic;
+}
+.colorClass{
+    color:red;
+}
+button{
+    display:block;
+    margin:0 auto
+}

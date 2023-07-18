@@ -1,1 +1,26 @@
-<p>student works!</p>
+<table>
+    <tr>
+        <td>NAME</td>
+        <td>{{Name}}</td>
+    </tr>
+    <tr *ngIf="ShowDetails">
+        <td>BRANCH</td>
+        <td>{{Branch}}</td>
+    </tr>
+    <tr *ngIf="ShowDetails">
+        <td>MOBILE</td>
+        <td>{{Mobile}}</td>
+    </tr>
+    <tr *ngIf="ShowDetails">
+        <td>GENDER</td>
+        <td>{{Gender}}</td>
+    </tr>
+    <tr *ngIf="ShowDetails">
+        <td>AGE</td>
+        <td>{{Age}}</td>
+    </tr>
+</table>
+<br/>
+<button (click) ='ToggleDetails()'>{{ShowDetails ? 'Hide' :'Show'}}</button>
+<p style="color:green" [ngStyle] = 'AddCSSStyles()'>{{getStudentDetail()}}</p>
+

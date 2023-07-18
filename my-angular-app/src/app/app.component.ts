@@ -8,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-angular-app';
+  isDisabled:boolean=true;
+  HackText:string="Hello <script>alert('Your application is hacked')</script>";
+  classToApply:string='boldClass colorClass';
+  Name:string = ''
+
+  onClick():void{
+    console.log('Button is Clicked');
+  }
 }
+

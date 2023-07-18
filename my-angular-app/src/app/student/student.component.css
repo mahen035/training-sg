@@ -1,0 +1,10 @@
+table{
+    margin:auto;
+    border-collapse: collapse;
+    color:blue;
+    font-size: large;
+}
+
+td{
+    border:1px solid black;
+}
