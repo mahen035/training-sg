@@ -1,11 +1,18 @@
 <div id="count">
-<span class="radioClass">Show:</span>
-<input type="radio" name="options"/>
-<span class="radioClass">{{"ALL("+ all+ ")"}}</span>
+    <span class="radioClass">Show:</span>
+    <input type="radio" name="options" value="ALL"
+    [(ngModel)]="selectedRadioButtonValue"
+    (change)="onRadioButtonSelectionChange()"/>
+    <span class="radioClass">{{"ALL("+ all+ ")"}}</span>
 
-<input type="radio" name="options"/>
-<span class="radioClass">{{"MALE("+ male+ ")"}}</span>
+    <input type="radio" name="options" value="Male"
+    [(ngModel)]="selectedRadioButtonValue"
+    (change)="onRadioButtonSelectionChange()"/>
+    <span class="radioClass">{{"MALE("+ male+ ")"}}</span>
 
-<input type="radio" name="options"/>
-<span class="radioClass">{{"FEMALE("+ female+ ")"}}</span>
+    <input type="radio" name="options" value="Female"
+    [(ngModel)]="selectedRadioButtonValue"
+    (change)="onRadioButtonSelectionChange()"/>
+    <span class="radioClass">{{"FEMALE("+ female+ ")"}}</span>
 </div>
+<div id="test"></div>

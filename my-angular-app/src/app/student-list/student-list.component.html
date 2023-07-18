@@ -1,5 +1,8 @@
-<app-student-count></app-student-count>
-<br/><br/>
+<app-student-count [all]="getTotalStudentsCount()"
+[male]="getMaleStudentsCount()"
+[female]="getFemaleStudentsCount()"
+(countRadioButtonSelectionChanged) = "onStudentCountRadioButtonChange($event)"></app-student-count>
+<br/>
 <table>
     <thead>
         <tr>
@@ -11,7 +14,8 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let student of students">
+        <ng-container *ngFor="let student of students">
+        <tr  *ngIf="selectedStudentCountRadioButton =='ALL' || selectedStudentCountRadioButton == student.Gender">
             <td>{{student.ID}}</td>
             <td>{{student.FirstName +" "+student.LastName}}</td>
             <td>{{student.Gender}}</td>
@@ -19,5 +23,6 @@
             <td>{{student.CourseFee}}</td>
 
         </tr>
+    </ng-container>
     </tbody>
 </table>
