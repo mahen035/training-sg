@@ -8,13 +8,15 @@ import { FormsModule } from '@angular/forms';
 import { StudentListComponent } from './student-list/student-list.component';
 import { StudentCountComponent } from './student-count/student-count.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StudentComponent,
     StudentListComponent,
-    StudentCountComponent
+    StudentCountComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

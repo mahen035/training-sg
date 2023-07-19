@@ -9,6 +9,17 @@
     You entered: {{Name}}
 </div>
 <hr>
-<app-student></app-student> -->
+<app-student></app-student>
 
-<app-student-list></app-student-list>
+<app-student-list></app-student-list> -->
+
+<h1>Angular Routing Example</h1>
+<!--
+<a [routerLink] = "['/studentLink']">Student</a><br/>
+<a [routerLink] = "['/studentlistLink']">Student List</a>
+-->
+<button (click) = "getStudent()">Student</button><br/><br/>
+<button (click) = "getStudentList()">Student List</button>
+<div>
+    <router-outlet></router-outlet>
+</div>

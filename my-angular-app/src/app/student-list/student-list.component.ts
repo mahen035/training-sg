@@ -17,11 +17,11 @@ export class StudentListComponent {
     }
 
     ngOnInit(){
-      //this.students = this._studentService.getStudents();
-      this._studentService.getUsers().subscribe(response=>{
-        this.students = response;
-        console.log(this.students);
-      })
+      this.students = this._studentService.getStudents();
+      // this._studentService.getUsers().subscribe(response=>{
+      //   this.students = response;
+      //   console.log(this.students);
+      // })
     }
 
     getTotalStudentsCount():number {
