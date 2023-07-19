@@ -5,7 +5,14 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
+
 @Entity
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class User {
 	
 	@Id
@@ -15,11 +22,7 @@ public class User {
 	private String firstName;
 	private String lastName;
 	private int age;
-	
-	public User() {
-		
-	}
-		
+			
 	public User(String firstName, String lastName, int age) {
 		super();
 		this.firstName = firstName;
